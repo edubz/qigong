@@ -21,13 +21,15 @@ main {
   width: 50px;
 }
 .page {
-  width: 33.3333333%;
+  width: 73.3333333%;
+  max-width: 750px;
   border: solid 2px;
   flex-direction: column;
   align-items: center;
   margin: 5px;
   overflow: scroll;
   display: none;
+  background-color: lightblue;
 }
   .left-page {
     display: none;
@@ -123,16 +125,13 @@ h4 {
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-  .left-page {
-    display: none;
-  }
-  .right-page {
-    display: none;
-  }
   .page {
     width: 100%;
+  }
+  .left-trigger{
+    left: 4px;
+  }
+  .right-trigger {
+    left: -4px;
   }
 }
