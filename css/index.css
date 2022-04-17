@@ -70,7 +70,7 @@ h4 {
   content: "<";
   color: white;
   position: absolute;
-  left: 4px;
+  left: 7px;
 }
 .right-trigger {
   position: relative;
@@ -96,7 +96,7 @@ h4 {
   content: ">";
   color: white;
   position: absolute;
-  right: 4px;
+  right: 7px;
 }
 .right-trigger:hover {
   cursor: pointer;
@@ -133,5 +133,17 @@ h4 {
   }
   .right-trigger {
     left: -4px;
+  }
+  .left-trigger:after {
+    content: "<";
+    color: white;
+    position: absolute;
+    left: 4px;
+  }
+  .right-trigger:after {
+    content: ">";
+    color: white;
+    position: absolute;
+    right: 4px;
   }
 }
