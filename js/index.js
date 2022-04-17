@@ -28,6 +28,7 @@ right.onclick = () => {
   }
   page[i].style.opacity = 0;
   page[i].style.display = "flex";
+  page[i].scrollTo(0, 0);
   setTimeout(function () {
     page[i].style.opacity = "1";
   }, 100);
@@ -48,6 +49,7 @@ left.onclick = () => {
   }
   page[i].style.opacity = 0;
   page[i].style.display = "flex";
+  page[i].scrollTo(0, 0);
   setTimeout(function () {
     page[i].style.opacity = "1";
   }, 100);
