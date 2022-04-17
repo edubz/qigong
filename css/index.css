@@ -19,6 +19,7 @@ main {
 }
 #yin-yang {
   width: 50px;
+  margin: 20px;
 }
 .page {
   width: 73.3333333%;
@@ -46,14 +47,24 @@ ul {
 }
 li {
   list-style-type: none;
+  padding-left: 75px;
+
+  
 }
 
 p {
   width: 90%;
-  text-align: center;
+  text-align: left;
+  padding-left: 75px;
+  padding-right: 75px;
+  margin: 10px;
 }
 h4 {
   border-bottom: solid 1px;
+  margin: 5px;
+}
+ul {
+  margin: 10px;
 }
 
 .left-trigger {
@@ -121,7 +132,13 @@ h4 {
 .left-trigger:hover {
   cursor: pointer;
 }
-
+.elements {
+  width: 50%;
+  justify-self: center;
+}
+.meridians {
+  width: 75%;
+}
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
@@ -134,16 +151,22 @@ h4 {
   .right-trigger {
     left: -4px;
   }
-  .left-trigger:after {
-    content: "<";
-    color: white;
-    position: absolute;
-    left: 4px;
-  }
-  .right-trigger:after {
-    content: ">";
-    color: white;
-    position: absolute;
-    right: 4px;
+  .meridians {
+  width: 90%;
+    justify-self: center;
+}
+  .elements {
+  width: 80%;
+    justify-self: center;
+}
+  li {
+  list-style-type: none;
+  padding-left: 0px;
+}
+  p {
+  width: 90%;
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 5px;
   }
 }
