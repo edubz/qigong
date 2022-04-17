@@ -23,6 +23,11 @@ main {
 #yin-yang {
   width: 50px;
   margin: 20px;
+  transition: .25s all;
+}
+#yin-yang:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
 }
 .page {
   width: 73.3333333%;
